@@ -1,0 +1,460 @@
+[ 2017-04-08T00:57:52+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xingchi_attribute` [ RunTime:0.0360s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '3' AND a.attr_type = '唯一'  [ RunTime:0.0260s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value,group_concat(b.attr_value) attr_values FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '3' AND a.attr_type = '可选' GROUP BY b.attr_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods_pic` [ RunTime:0.2100s ]
+SQL: SELECT * FROM `xingchi_goods_pic` WHERE `goods_id` = 3  [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1041 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1042 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T00:57:57+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xingchi_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '7' AND a.attr_type = '唯一'  [ RunTime:0.0010s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value,group_concat(b.attr_value) attr_values FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '7' AND a.attr_type = '可选' GROUP BY b.attr_id  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods_pic` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xingchi_goods_pic` WHERE `goods_id` = 7  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1041 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1042 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T00:58:00+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart?goods_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-08T00:58:02+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0070s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 7  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T00:58:13+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_attribute` [ RunTime:0.0060s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '2' AND a.attr_type = '唯一'  [ RunTime:0.0020s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value,group_concat(b.attr_value) attr_values FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '2' AND a.attr_type = '可选' GROUP BY b.attr_id  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods_pic` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xingchi_goods_pic` WHERE `goods_id` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1041 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1042 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T00:58:14+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart?goods_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T00:58:15+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart?goods_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T00:58:22+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0070s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T00:58:24+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0090s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 7  [ RunTime:0.0000s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-08T01:07:51+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_order` [ RunTime:0.0100s ]
+SQL: INSERT INTO `xingchi_order` (`cgn_id`,`order_pay`,`order_fapiao_title`,`order_fapiao_company`,`order_fapiao_content`,`user_id`,`order_number`,`order_price`,`upd_time`,`add_time`) VALUES ('35','0','0','','明细','133','itcast-shop-20170408010751-3614','5443','1491584871','1491584871') [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `xingchi_order_goods` [ RunTime:0.0090s ]
+SQL: INSERT INTO `xingchi_order_goods` (`order_id`,`goods_id`,`goods_price`,`goods_number`,`goods_total_price`) VALUES ('11','7','4999.00','1','4999.00') [ RunTime:0.0660s ]
+SQL: INSERT INTO `xingchi_order_goods` (`order_id`,`goods_id`,`goods_price`,`goods_number`,`goods_total_price`) VALUES ('11','2','222.00','2','444') [ RunTime:0.0550s ]
+NOTIC: [8] Undefined property: Home\Common\Cart::$cartInfo E:\CZwj\xingchi\Application\Home\Common\Cart.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015001s ]
+
+[ 2017-04-08T01:20:04+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-08T01:20:13+08:00 ] 127.0.0.1 /index.php/Home/Shop/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:showlist
+
+[ 2017-04-08T01:20:59+08:00 ] 127.0.0.1 /index.php/Home/good/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Good
+
+[ 2017-04-08T01:21:05+08:00 ] 127.0.0.1 /index.php/Home/goods/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`goods_price`,`sm_logo` FROM `xingchi_goods` ORDER BY id desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\5abfe48c9190326c5582b9c3f76eb39d.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\5abfe48c9190326c5582b9c3f76eb39d.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\5abfe48c9190326c5582b9c3f76eb39d.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:08+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '4' AND a.attr_type = '唯一'  [ RunTime:0.0000s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value,group_concat(b.attr_value) attr_values FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '4' AND a.attr_type = '可选' GROUP BY b.attr_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods_pic` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xingchi_goods_pic` WHERE `goods_id` = 4  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1041 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1042 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-08T01:21:15+08:00 ] 127.0.0.1 /index.php/Home/Goods/detail/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_attribute` [ RunTime:0.0040s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '5' AND a.attr_type = '唯一'  [ RunTime:0.0010s ]
+SQL: SELECT b.attr_id,a.attr_name,b.attr_value,group_concat(b.attr_value) attr_values FROM xingchi_attribute a INNER JOIN xingchi_goods_attr b on a.id=b.attr_id  WHERE b.goods_id = '5' AND a.attr_type = '可选' GROUP BY b.attr_id  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods_pic` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `xingchi_goods_pic` WHERE `goods_id` = 5  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Shop - assumed 'Shop' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Use of undefined constant flow1 - assumed 'flow1' E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [2] Division by zero E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 122 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1041 行.
+NOTIC: [8] Undefined variable: number_price E:\CZwj\xingchi\Application\Runtime\Cache\Home\795e274f7e0defaaba4ae5ed57f62a8c.php 第 1042 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:17+08:00 ] 127.0.0.1 /index.php/Home/Shop/addCart?goods_id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `xingchi_goods` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:18+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0030s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 5  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:19+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:20+08:00 ] 127.0.0.1 /index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:28+08:00 ] 127.0.0.1 /index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'jack' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-08T01:21:28+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xingchi_goods` [ RunTime:0.0090s ]
+SQL: SELECT `sm_logo` FROM `xingchi_goods` WHERE `id` = 5  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xingchi_consignee` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xingchi_consignee`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-08T01:21:52+08:00 ] 127.0.0.1 /index.php/Home/Shop/flow2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xingchi_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `xingchi_order` (`cgn_id`,`order_pay`,`order_fapiao_title`,`order_fapiao_company`,`order_fapiao_content`,`user_id`,`order_number`,`order_price`,`upd_time`,`add_time`) VALUES ('1','0','0','','明细','133','itcast-shop-20170408012151-4989','2888','1491585711','1491585711') [ RunTime:0.0860s ]
+SQL: SHOW COLUMNS FROM `xingchi_order_goods` [ RunTime:0.0080s ]
+SQL: INSERT INTO `xingchi_order_goods` (`order_id`,`goods_id`,`goods_price`,`goods_number`,`goods_total_price`) VALUES ('12','5','2888.00','1','2888.00') [ RunTime:0.1000s ]
+NOTIC: [8] Undefined property: Home\Common\Cart::$cartInfo E:\CZwj\xingchi\Application\Home\Common\Cart.class.php 第 124 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
