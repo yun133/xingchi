@@ -73,7 +73,6 @@ class ShopController extends Controller {
                 //给sp_order_goods表形成记录
                 D('OrderGoods')->add($shuju2);
             }
-
             //2) 清除购物车信息
             $cart -> delAll();
 
@@ -120,11 +119,11 @@ eof;
             $this->assign('number_price',$number_price);
 
             //收货人信息展示
-            $consignee=M('Consignee')->select();
+            $user_id=session('user_id');
+            $consignee=M('Consignee')->where(array('user_id'=>$user_id))->select();
             $this->assign('consignee',$consignee);
             $this->display();
-        }
-        
+        }        
    }
 
    //使得购物车商品数量发生变化

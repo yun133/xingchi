@@ -1,0 +1,127 @@
+request body = <TemplateSMS>
+                    <to>13161855198</to> 
+                    <appId>8aaf07085a6ec238015a8cbb0cce0f2d</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085a6ec238015a8cbb0ac40f27/SMS/TemplateSMS?sig=E46325B35E48F039F27FC1D2A8BB0DEB
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>96f590f3b8e649f8a938b867d7d5bfeb</smsMessageSid>
+        <dateCreated>20170309113021</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://www.jtest.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=A4F6055431688FEC2896D6F3A6F88493
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>172001</statusCode><statusMsg>网络错误</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=72C14BCD8C1F11E380A2A0C177B2FBE1
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>112310</statusCode>
+    <statusMsg>【短信】应用未上线，模板短信接收号码外呼受限</statusMsg>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=494C1075C8D2833B1B10BB9152590F2F
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>c76bea0070c64ac88d2b6f137811d07b</smsMessageSid>
+        <dateCreated>20170406163508</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=2BA03F798530A6B87BDA145EA5B839B2
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>160038</statusCode>
+    <statusMsg>短信验证码发送过频繁</statusMsg>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=E74898C787E1C034DE5F334BBFFA2F7D
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>1763dd00fe804e26b36238f3dcf879e5</smsMessageSid>
+        <dateCreated>20170406163609</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=E74898C787E1C034DE5F334BBFFA2F7D
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>160038</statusCode>
+    <statusMsg>短信验证码发送过频繁</statusMsg>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=8A0DC55BBE945DF939D6BED7AB83A715
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>6839d2809f3c42a08607b35f64533561</smsMessageSid>
+        <dateCreated>20170406163712</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13113663359</to> 
+                    <appId>8aaf07085b3bb22e015b4229a30b0540</appId>
+                    <templateId>1</templateId>
+                    <datas><data>1299</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8aaf07085b3bb22e015b4229a2a4053c/SMS/TemplateSMS?sig=45892C551EF362D55E71C54E191A1A84
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>250788d057cc4858934baead4084faf4</smsMessageSid>
+        <dateCreated>20170409012315</dateCreated>
+    </TemplateSMS>
+</Response>
+

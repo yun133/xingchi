@@ -32,11 +32,57 @@ class UserController extends Controller {
     }
     public function register(){
     	layout(false);//不使用默认布局
+        $user=D('user');
+        if (IS_POST) {
+            //校验短信验证码
+            $checkcode=I('post.checkcode');
+            $data=session('data');
+            $limittime=$data['limittime']*60;//转换限制单位为秒
+            $xianzaitime=time();
+            if ($xianzaitime-$limittime>$data['nowtime']) {
+                //一时间过期验证
+                $this->assign('infoerror','短信验证码已经过期');
+            } elseif($checkcode!=$data['code']){
+                //二验证码是否正确
+                $this->assign('infoerror','验证码输入错误');
+            }else{
+                $shuju=$user->create();
+                $shuju['password']=md5($shuju['password']);
+                $shuju['user_time']=$shuju['last_time']=time();
+                if ($user->add($shuju)) {
+                    $this->redirect('User/login');
+                }
+            }    
+        }
         $this->display();
     }
     //会员退出
     function logout(){
         session(null);
         $this -> redirect("User/login");
+    }
+    //发送短信验证码
+    public function sendCont(){
+        if(IS_AJAX){
+            //获取手机号码
+            $tel = I('get.tel');
+            //① 制作验证码(4位随机数)
+            $data['code'] = mt_rand(1000,9999);
+            //② 限制时间
+            $data['limittime'] = 3;
+            //③ 当前时间
+            $data['nowtime'] = time();
+
+            //把①、②、③的信息都存储给session
+            session('data',$data);
+// dump($tel);
+            //发送短信
+            $z = sendSms($tel,array($data['code'],$data['limittime']));
+            if($z){
+                echo json_encode(array('status'=>'100'));
+            }else{
+                echo json_encode(array('status'=>'101'));
+            }
+        }
     }
 }

@@ -87,11 +87,16 @@
 						<input type="password" class="txt" name="password" />
 						<p> <span>请再次输入密码</p>
 					</li>
+					<li class="checkcode"><label for="">手机号码：</label>
+						<input type="text"  name="user_tel" />
+						<span><input type="button" value="免费获取验证码" onclick="send()" style="height: 30px;"></span><span id="sendresult"></span>
+					</li>
 					<li class="checkcode">
 						<label for="">验证码：</label>
 						<input type="text"  name="checkcode" />
-						<img src="<?php echo C('HOME_IMAGE_PATH');?>checkcode1.jpg" alt="" />
-						<span>看不清？<a href="">换一张</a></span>
+						<!-- <img src="<?php echo C('HOME_IMAGE_PATH');?>checkcode1.jpg" alt="" /> -->
+						<!-- <span>看不清？<a href="">换一张</a></span> -->
+						<span style="color: red"><?php echo ((isset($infoerror) && ($infoerror !== ""))?($infoerror):''); ?></span>
 					</li>
 					<li>
 						<label for="">&nbsp;</label>
@@ -103,7 +108,25 @@
 					</li>
 				</ul>
 			</form>
-
+<script type="text/javascript">
+	function send(){
+		var tel=$('[name=user_tel]').val();
+		alert(tel);
+		$.ajax({
+			url:'/index.php/Home/User/sendCont',
+			data:{'tel':tel},	
+			dataType:'json',
+			success:function(msg){
+				console.log(msg);
+				if (msg.status==100) {
+					$('#sendresult').html('短信发送成功...');
+				} else {
+					$('#sendresult').html('短信发送失败!');
+				}
+			}
+		});
+	}
+</script>
 			
 		</div>
 		
