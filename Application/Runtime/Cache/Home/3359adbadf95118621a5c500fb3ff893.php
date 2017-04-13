@@ -87,6 +87,10 @@
 						<input type="password" class="txt" name="password" />
 						<p> <span>请再次输入密码</p>
 					</li>
+					<li>
+						<label for="">邮箱：</label>
+						<input type="text" class="txt" name="user_email" />
+					</li>
 					<li class="checkcode"><label for="">手机号码：</label>
 						<input type="text"  name="user_tel" />
 						<span><input type="button" value="免费获取验证码" onclick="send()" style="height: 30px;"></span><span id="sendresult"></span>

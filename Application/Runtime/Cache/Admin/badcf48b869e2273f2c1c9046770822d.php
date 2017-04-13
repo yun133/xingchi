@@ -156,10 +156,71 @@ a:visited{
         </td>
       </tr>
     </table>
-
     </form>
     </td>
   </tr>
 </table>
+<style type="text/css">
+*{
+    margin:0px;
+    padding:0px;
+}
+body, button, input, select, textarea {
+    font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+}
+p{
+    width:603px;
+    padding-top:3px;
+    margin-top:10px;
+    overflow:hidden;
+}
+input#address{
+  width:300px;
+}
+#container {
+   min-width:603px;
+   min-height:767px;
+}
+</style>
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+<script type="text/javascript">
+var geocoder,map,marker = null;
+var init = function() {
+    var center = new qq.maps.LatLng(39.916527,116.397128);
+    map = new qq.maps.Map(document.getElementById('container'),{
+        center: center,
+        zoom: 15
+    });
+    //调用地址解析类
+    geocoder = new qq.maps.Geocoder({
+        complete : function(result){
+            map.setCenter(result.detail.location);
+            var marker = new qq.maps.Marker({
+                map:map,
+                position: result.detail.location
+            });
+            var infoWin = new qq.maps.InfoWindow({
+            map: map
+            });
+            infoWin.open();
+            //tips  自定义内容
+            infoWin.setContent('<div style="width:200px;padding-top:10px;">'+
+                '<p>地址： </p>'+
+                '<p><?php echo ($orderinfo["cgn_address"]); ?></p></div>');
+            infoWin.setPosition(marker);
+        }
+    });
+    var address = document.getElementById("address").value;
+    //通过getLocation();方法获取位置信息值
+    geocoder.getLocation(address);
+}
+</script>
+</head>
+<body onload="init()">
+<div>
+<input id="address" type="textbox" value="<?php echo ($orderinfo["cgn_address"]); ?>">
+</div>
+<div id="container"></div>
+<p>输入地址，点击search进行地址解释。</p>
 </body>
 </html>
